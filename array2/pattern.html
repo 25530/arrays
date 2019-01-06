@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+    <link rel="stylesheet" type= "text/css" href="style.css">
+	<title>JS nested for loop example</title>
+</head>
+<body>
+	<h1>Sam Harwig MG1B</h1>
+        Patroon met nested for loops
+        <br>
+         <a href="array2.html" title="naar de array opdracht">naar de array opdracht</a>
+        <br>
+        <br>
+        <p>Opgave 1</p>
+        <p id="opgave1"></p>
+        <script>
+      let x,y,text="";
+        for(x=1; x <=6; x++){
+            for (y=1; y < x; y++)
+            {
+                text=text+("&#128512");
+            }
+            text+="<br>";
+        }
+                    console.log(text);
+            opgave1.innerHTML = text;
+    </script>
+        <br>
+        <p>Challenge 1</p>
+        <p id="challenge1"></p>
+    
+        <script>
+      text="";
+                for(x=1; x <=6; x++){
+                     for (y=1; y < x; y++)
+                         {
+                             if (y==2){
+                                text=text+("&#128512");
+                            }
+                             else if (y==4
+                                 ){
+                                text=text+("&#128512");
+                            }
+                            else {text=text+( "&#128525");}
+                            }
+                            text += "<br>";
+
+                }
+
+        challenge1.innerHTML = text;
+        text='';
+    </script>
+        <br>
+        <p>Challenge 2</p>
+        <p id="challenge2"></p>
+        <script>
+      text="";
+                for(x=1; x <=6; x++){
+                     for (y=1; y < x; y++)
+                         {
+                             if (y==1){
+                                text=text+("&#128520");
+                            }
+                             else if (y==3
+                                 ){
+                                text=text+("&#128169");
+                                text=text+("&#128169");
+                            }
+                            else if (y==2
+                                 ){
+                                text=text+("&#128125");
+                            }
+                            else if (y==4
+                                 ){
+                                text=text+("&#128520");
+                            }
+                            else if (y==5
+                                 ){
+                                text=text+("&#128125");
+                            }
+                            else {text=text+( "&#128525");}
+                            }
+                            text += "<br>";
+
+                }
+
+        challenge2.innerHTML = text;
+        text='';
+    </script>
+    <br>
+    <p>Challenge 3</p>
+        <p id="challenge3"></p>
+        <script>
+      text="";
+                for(x=6; x >=1; x--){
+                     for (y=1; y < x; y++)
+                         {
+                             if (y==1){
+                                text=text+("&#128520");
+                            }
+                             else if (y==3
+                                 ){
+                                text=text+("&#128169");
+                                text=text+("&#128169");
+                            }
+                            else if (y==2
+                                 ){
+                                text=text+("&#128125");
+                            }
+                            else if (y==4
+                                 ){
+                                text=text+("&#128520");
+                            }
+                            else if (y==5
+                                 ){
+                                text=text+("&#128125");
+                            }
+                            else {text=text+( "&#128525");}
+                            }
+                            text += "<br>";
+
+                }
+
+        challenge3.innerHTML = text;
+        text='';
+    </script>
+
+    
+</body>
+</html>

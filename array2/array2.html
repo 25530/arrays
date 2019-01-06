@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type= "text/css" href="style.css">
+	<title>Arrays2</title>
+</head>
+<body>
+<a href="pattern.html" title="naar de pattern opdracht">Terug naar de Pattern opdracht</a>
+<p id="Sam"></p>
+<script>
+       let woorden = [
+        '<i> Malibu</i>',
+          'Bacardi',
+          'Hennessy',
+          'Desperados',
+          '<i>Facebook</i>',
+          'Instagram',
+          'Youtube',
+          'Twitter',
+          'Google',
+          'Reddit',
+          '<i>Nederland</i>',
+          'Duitsland',
+          'Verenigd Koninkrijk',
+          'Frankrijk',
+          'Italië',
+          'Spanje',
+          '<i>Dirk</i>',
+          'Hoogvliet',
+          'Abert Heijn',
+          '<i>Tacos</i>',
+          '<i>Friet</i>',
+          '<i>Pizza</i>',
+          '<i>Lahmacun</i>',
+          '<i>Broodje Doner</i>',
+          '<i>Kapsalon</i>',
+          '<i>Nachos</i>',
+          '<i>Buritto</i>'
+    ];
+    let Sam = document.getElementById('Sam');
+    let toevoeg = ["ste", "de"];
+    let extra = "";
+    let cijfers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27];
+
+     let text2 = "";
+    for (let i = 0; i < woorden.length; i++) {
+        if (
+            cijfers[i] == "2" ||
+            cijfers[i] == "3" ||
+            cijfers[i] == "4" ||
+            cijfers[i] == "5" ||
+            cijfers[i] == "6" ||
+            cijfers[i] == "7" ||
+            cijfers[i] == "9" ||
+            cijfers[i] == "10" ||
+            cijfers[i] == "11" ||
+            cijfers[i] == "12" ||
+            cijfers[i] == "13" ||
+            cijfers[i] == "14" ||
+            cijfers[i] == "15" ||
+            cijfers[i] == "16" ||
+            cijfers[i] == "17" ||
+            cijfers[i] == "18" ||
+            cijfers[i] == "19" ){ 
+
+
+            extra = toevoeg[1];
+        }else {extra = toevoeg[0];
+        }
+        text2 += "<li>" +cijfers[i] + extra + " " + woorden[i] + "</li>"  ;
+        }
+    Sam.innerHTML = text2;
+
+
+</script>
+
+</body>
+</html>
